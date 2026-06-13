@@ -12,7 +12,7 @@ export const personalInfo = {
     linkedin: 'https://linkedin.com/in/pavan-sekhar-mandavilli/',
     github: 'https://github.com/Pavanmandavilli',
     instagram: 'https://instagram.com/chocolate_boy__485/',
-    resume: ''
+    resume: 'https://drive.google.com/file/d/1PCyxnR55s0ckfrfwjR4KMeCZPC62arlj/view?usp=sharing'
   },
 };
 
