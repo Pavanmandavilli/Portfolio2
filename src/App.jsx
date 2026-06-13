@@ -25,16 +25,6 @@ function App() {
         <Education />
         <Contact />
       </main>
-      <footer className="footer">
-        <div className="container">
-          <p>
-            <span className="footer-name">Pavan Sekhar</span>
-            {' '}— Built with React & Neural Magic
-            <span className="footer-heart"> ♥</span>
-          </p>
-          <p className="footer-copy">© 2025 All rights reserved.</p>
-        </div>
-      </footer>
     </>
   );
 }
