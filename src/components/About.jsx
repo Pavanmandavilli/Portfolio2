@@ -79,17 +79,21 @@ const About = () => {
 
             <div className="cert-cards">
               {certifications.map((cert, i) => (
-                <div
+                <a
                   key={cert.name}
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`cert-card animate-up${visualVisible ? ' visible' : ''}`}
-                  style={{ transitionDelay: `${0.4 + i * 0.1}s` }}
+                  style={{ transitionDelay: `${0.4 + i * 0.1}s`, textDecoration: 'none' }}
                 >
                   <span className="cert-icon">{cert.icon}</span>
                   <div className="cert-info">
                     <span className="cert-name">{cert.name}</span>
                     <span className="cert-issuer">{cert.issuer}</span>
                   </div>
-                </div>
+                  <span className="cert-arrow">↗</span>
+                </a>
               ))}
             </div>
           </div>
