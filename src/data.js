@@ -279,6 +279,58 @@ export const education = [
 ];
 
 export const certifications = [
-  { name: 'TensorFlow Developer', issuer: 'Google', icon: '🧠' },
-  { name: 'Python for Data Science', issuer: 'IBM', icon: '🐍' },
+  { name: 'TensorFlow Developer', issuer: 'Google', icon: '🧠', link: 'https://www.credential.net/7d228751-0f11-4a6b-aba3-efd327c8a5e8#acc.NTuBW9oZ' },
+  { name: 'Python for Data Science', issuer: 'IBM', icon: '🐍', link: 'https://courses.etrain.skillsnetwork.site/certificates/b5c2557d44584f5b9496d9beb1baae9c' },
 ];
+
+export const blogs = [
+  {
+    title: 'YOLO Object Detection',
+    date: 'October 14, 2023',
+    category: 'Computer Vision',
+    description: 'A deep dive into YOLO (You Only Look Once) — the real-time object detection algorithm that revolutionized computer vision. Covers architecture, versioning from v1 to v8, image labeling, and real-world applications in surveillance and autonomous vehicles.',
+    tags: ['Computer Vision', 'Deep Learning', 'Object Detection', 'Neural Networks', 'AI'],
+    link: 'https://www.linkedin.com/pulse/object-detection-using-yolo-kognitiv-club-vbsqc/',
+    gradient: 'linear-gradient(135deg, #00f5ff22, #7b2ff722)',
+    accent: '#00f5ff',
+  },
+  {
+    title: 'Crime Forecasting Using ML & CV',
+    date: 'January 20, 2024',
+    category: 'Machine Learning',
+    description: 'Exploring how machine learning and computer vision can be combined to predict criminal activity proactively. Covers data collection, feature engineering, model selection, CCTV-based anomaly detection, and the ethical considerations of deploying predictive policing systems.',
+    tags: ['Machine Learning', 'Computer Vision', 'Predictive Analytics', 'Data Science', 'AI'],
+    link: 'https://www.linkedin.com/pulse/crime-forecasting-using-ml-cv-kognitiv-club-zb8gc/',
+    gradient: 'linear-gradient(135deg, #ff006e22, #7b2ff722)',
+    accent: '#ff006e',
+  },
+  {
+    title: 'Attention Mechanism',
+    date: 'February 1, 2025',
+    category: 'Deep Learning',
+    description: 'A clear breakdown of how attention mechanisms power transformer models — from Query/Key/Value vectors to softmax-weighted context integration. Uses intuitive analogies to explain how models dynamically focus on the most relevant parts of an input.',
+    tags: ['Deep Learning', 'Transformers', 'NLP', 'AI', 'Machine Learning'],
+    link: 'https://www.linkedin.com/pulse/attention-mechanism-pavan-sekhar-mandavilli-7lwvc/',
+    gradient: 'linear-gradient(135deg, #7b2ff722, #00ff8822)',
+    accent: '#7b2ff7',
+  },
+  {
+    title: 'Transforming CRM with A2A Protocol',
+    date: 'May 21, 2025',
+    category: 'AI Agents',
+    description: "How Google's Agent-to-Agent (A2A) protocol enables AI agents to autonomously discover, coordinate, and hand off tasks across CRM platforms like Salesforce and HubSpot — eliminating manual intervention and unlocking fully autonomous sales and support workflows.",
+    tags: ['AI Agents', 'CRM', 'Automation', 'A2A', 'LLM'],
+    link: 'https://www.linkedin.com/pulse/transforming-crm-a2a-protocol-pavan-sekhar-mandavilli-gzo2e/',
+    gradient: 'linear-gradient(135deg, #ffc86422, #34d39922)',
+    accent: '#ffc864',
+  },
+  {
+    title: 'Cross-Modal Reasoning: The Next Big Leap in AI',
+    date: 'October 3, 2025',
+    category: 'AI Research',
+    description: 'Cross-modal AI systems that simultaneously process text, images, audio, and video are redefining what machines can understand. Covers the shift from single-sense models, real-world applications in healthcare, retail, and education, and the challenges of hallucination, bias, and compute cost.',
+    tags: ['AI Research', 'Multimodal AI', 'Deep Learning', 'Innovation', 'LLM'],
+    link: 'https://www.linkedin.com/pulse/cross-modal-reasoning-next-big-leap-ai-pavan-sekhar-mandavilli-h09gc/',
+    gradient: 'linear-gradient(135deg, #00f5ff22, #ff006e22)',
+    accent: '#00f5ff',
+  },
