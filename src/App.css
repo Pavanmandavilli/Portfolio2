@@ -737,12 +737,25 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  cursor: pointer;
   transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
 .cert-card:hover {
   border-color: var(--border-glow);
   transform: translateY(-2px);
+}
+
+.cert-arrow {
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: var(--cyan);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.cert-card:hover .cert-arrow {
+  opacity: 1;
 }
 
 .cert-icon {
@@ -1151,26 +1164,26 @@
 }
 
 .project-card:hover {
-  border-color: rgba(0, 245, 255, 0.3);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(0, 245, 255, 0.1);
-  transform: translateY(-8px) rotateX(2deg) rotateY(1deg) !important;
+  border-color: rgba(255,255,255,0.1);
+  box-shadow: 0 14px 44px rgba(0,0,0,0.45), 0 0 22px rgba(0,0,0,0.2);
+  transform: translateY(-6px) rotateX(1deg) rotateY(0.5deg) !important;
 }
 
-.project-card:hover::before { opacity: 1; }
+.project-card:hover::before { opacity: 0.4; }
 
 .project-card-glow {
   position: absolute;
-  top: -50%;
-  right: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle at center, var(--accent-color, rgba(0,245,255,0.08)) 0%, transparent 60%);
+  top: -30%;
+  right: -30%;
+  width: 160%;
+  height: 160%;
+  background: radial-gradient(circle at top right, var(--accent-color, rgba(0,245,255,0.05)) 0%, transparent 55%);
   opacity: 0;
   transition: opacity 0.4s ease;
   pointer-events: none;
 }
 
-.project-card:hover .project-card-glow { opacity: 1; }
+.project-card:hover .project-card-glow { opacity: 0.4; }
 
 .project-category {
   font-family: var(--font-mono);
@@ -1597,12 +1610,67 @@
 
 /* ── Responsive ─────────────────────────────────── */
 
+/* ── Blogs ────────────────────────────────────────── */
+
+.blogs-grid {
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+}
+
+.blog-card {
+  cursor: pointer;
+}
+
+/* Tone down the glow so card content stays readable */
+.blog-card .project-card-glow {
+  background: radial-gradient(circle at top right, var(--accent-color, rgba(0,245,255,0.04)) 0%, transparent 55%);
+}
+
+.blog-card:hover .project-card-glow {
+  opacity: 0.35;
+}
+
+.blog-card:hover {
+  border-color: rgba(255,255,255,0.1);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4), 0 0 20px rgba(0,0,0,0.2);
+  transform: translateY(-5px) !important;
+}
+
+.blog-card:hover::before {
+  opacity: 0.4;
+}
+
+.blog-card:hover .blog-read-link {
+  text-decoration: underline;
+}
+
+.blog-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.blog-date {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+.blog-read-link {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s;
+}
+
 @media (max-width: 640px) {
   :root { --section-padding: 80px 0; }
   .hero-actions { flex-direction: column; align-items: center; }
   .stats-grid, .cert-cards { grid-template-columns: 1fr; }
   .about-details { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
+  .blogs-grid { grid-template-columns: 1fr; }
   .education-grid { grid-template-columns: 1fr; }
   .contact-socials { flex-wrap: wrap; }
 }
