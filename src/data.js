@@ -334,3 +334,4 @@ export const blogs = [
     gradient: 'linear-gradient(135deg, #00f5ff22, #ff006e22)',
     accent: '#00f5ff',
   },
+];
