@@ -19,7 +19,7 @@ export const personalInfo = {
 export const stats = [
   { value: 1.7, suffix: '+', label: 'Years Experience' },
   { value: 8, suffix: '+', label: 'Projects Built' },
-  { value: 2, suffix: '', label: 'Certifications' },
+  { value: 3, suffix: '', label: 'Certifications' },
   { value: 95, suffix: '%', label: 'Python Proficiency' },
 ];
 
@@ -281,6 +281,7 @@ export const education = [
 export const certifications = [
   { name: 'TensorFlow Developer', issuer: 'Google', icon: '🧠', link: 'https://www.credential.net/7d228751-0f11-4a6b-aba3-efd327c8a5e8#acc.NTuBW9oZ' },
   { name: 'Python for Data Science', issuer: 'IBM', icon: '🐍', link: 'https://courses.etrain.skillsnetwork.site/certificates/b5c2557d44584f5b9496d9beb1baae9c' },
+  { name: 'AI Associate', issuer: 'Salesforce', icon: '☁️', link: 'https://drive.google.com/file/d/19ej-3QHKOWHC_55DZ527jmKrEXXpWNCg/view?usp=sharing' },
 ];
 
 export const blogs = [
